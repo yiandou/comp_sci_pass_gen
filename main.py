@@ -30,4 +30,10 @@ def fetch_word():
 
     return word
 
-print(fetch_word())
+def gen_weaker_pass():
+    word1 = fetch_word()
+    word2 = fetch_word()
+    password = word1 + word2
+    return password
+
+print(gen_weaker_pass())
